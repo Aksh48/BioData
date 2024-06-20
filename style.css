@@ -95,22 +95,33 @@ footer p {
     color: #777;
 }
 
-.sticky-icons {
+.sticky-container {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    display: flex;
+}
+.main-icon {
+    font-size: 50px;
+    color: #000;
+    cursor: pointer;
+}
+.icon-list {
+    display: none;
     flex-direction: column;
     gap: 10px;
+    margin-top: 10px;
 }
-.sticky-icons a {
+.icon-list a {
     font-size: 50px;
-    color: #25D366; /* Default color for WhatsApp, change as needed */
+    color: #25D366;
     text-decoration: none;
 }
-.sticky-icons a.instagram {
+.icon-list a.instagram {
     color: #E4405F;
 }
-.sticky-icons a.email {
+.icon-list a.email {
+    color: #000;
+}
+.icon-list a.call {
     color: #000;
 }

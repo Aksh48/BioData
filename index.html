@@ -112,24 +112,40 @@
             <p>पत्ता: वाघोली, जि. पुणे</p>
             <p>मो.क्र.: 8452841984</p>
         </footer>
-        <div class="sticky-icons">
-            <a href="https://wa.me/+918452841984" target="_blank" style="font-size:50px;color:#25D366;">
-                <i class="fab fa-whatsapp"></i>
-            </a>
+        <div class="sticky-container">
             
-            <!-- Instagram Icon -->
-            <a href="https://www.instagram.com/akshay_gandle" target="_blank" style="font-size:50px;color:#E4405F;">
-                <i class="fab fa-instagram"></i>
-            </a>
-            
-            <!-- Email Icon -->
-            <a href="mailto:akshaygandle2224@gmail.com" style="font-size:50px;color:#000;">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="tel:+918452841984">
-                <i class="fas fa-phone"></i>
-            </a>
+            <i class="fa fa-info-circle main-icon" onclick="toggleIcons()"></i>
+            <div class="icon-list" id="iconList">
+                <!-- WhatsApp Icon -->
+                <a href="https://wa.me/1234567890" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                
+                <!-- Instagram Icon -->
+                <a href="https://www.instagram.com/yourusername" target="_blank" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                
+                <!-- Email Icon -->
+                <a href="mailto:youremail@example.com" class="email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                
+                <!-- Call Icon -->
+                <a href="tel:+1234567890" class="call">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
         </div>
-    </div>
+        <script>
+            function toggleIcons() {
+                var iconList = document.getElementById('iconList');
+                if (iconList.style.display === 'none' || iconList.style.display === '') {
+                    iconList.style.display = 'flex';
+                } else {
+                    iconList.style.display = 'none';
+                }
+            }
+        </script>
 </body>
 </html>
