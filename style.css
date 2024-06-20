@@ -99,11 +99,18 @@ footer p {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .main-icon {
     font-size: 50px;
     color: #000;
     cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 10px;
 }
 .icon-list {
     display: none;
@@ -113,7 +120,7 @@ footer p {
 }
 .icon-list a {
     font-size: 50px;
-    color: #25D366;
+    color: #25D366; /* Default color for WhatsApp, change as needed */
     text-decoration: none;
 }
 .icon-list a.instagram {
