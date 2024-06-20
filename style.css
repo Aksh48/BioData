@@ -94,3 +94,23 @@ footer p {
     margin: 5px 0;
     color: #777;
 }
+
+.sticky-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sticky-icons a {
+    font-size: 50px;
+    color: #25D366; /* Default color for WhatsApp, change as needed */
+    text-decoration: none;
+}
+.sticky-icons a.instagram {
+    color: #E4405F;
+}
+.sticky-icons a.email {
+    color: #000;
+}
