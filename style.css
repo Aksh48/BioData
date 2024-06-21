@@ -103,6 +103,7 @@ footer p {
     flex-direction: column;
     align-items: center;
 }
+
 .main-icon {
     font-size: 50px;
     color: #000;
@@ -112,23 +113,92 @@ footer p {
     border-radius: 50%;
     padding: 10px;
 }
+
 .icon-list {
     display: none;
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
 }
+
 .icon-list a {
     font-size: 50px;
     color: #25D366; /* Default color for WhatsApp, change as needed */
     text-decoration: none;
 }
+
 .icon-list a.instagram {
     color: #E4405F;
 }
+
 .icon-list a.email {
     color: #000;
 }
+
 .icon-list a.call {
     color: #000;
+}
+
+@media (max-width: 768px) {
+    .invitation-card {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .ganesha-image {
+        width: 120px;
+    }
+
+    marquee {
+        font-size: 20px;
+    }
+
+    .photo img {
+        width: 150px;
+    }
+
+    table td {
+        padding: 8px;
+    }
+
+    .main-icon {
+        font-size: 40px;
+        padding: 8px;
+    }
+
+    .icon-list a {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .invitation-card {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .ganesha-image {
+        width: 100px;
+    }
+
+    marquee {
+        font-size: 16px;
+    }
+
+    .photo img {
+        width: 100px;
+    }
+
+    table td {
+        padding: 6px;
+    }
+
+    .main-icon {
+        font-size: 35px;
+        padding: 5px;
+    }
+
+    .icon-list a {
+        font-size: 35px;
+    }
 }
